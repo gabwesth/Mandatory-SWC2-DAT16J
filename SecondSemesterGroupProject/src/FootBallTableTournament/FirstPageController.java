@@ -29,7 +29,9 @@ public class FirstPageController {
             //stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Create New Tournament");
             stage.setScene(new Scene(root1, 394, 251));
+            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
             stage.show();
+
         } catch (IOException e) {
                 e.printStackTrace();
             }
