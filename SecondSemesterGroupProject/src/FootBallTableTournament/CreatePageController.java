@@ -19,16 +19,12 @@ import java.util.List;
 public class CreatePageController {
 
     ObservableList<String> numberOfTeamsOption = FXCollections.observableArrayList("4","6","8","10");
-
     @FXML
     private ChoiceBox TeamNumbers;
-
     @FXML
     private TextField NewTeamName;
-
     @FXML
     private Button BackBtt;
-
     @FXML
     private Button NextBtt;
 
@@ -42,6 +38,7 @@ public class CreatePageController {
             //stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Welcome!");
             stage.setScene(new Scene(root1, 394, 251));
+            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -50,13 +47,14 @@ public class CreatePageController {
     }
 
     @FXML
-    private void LoadTable(){
+    private void LoadTable(ActionEvent event){
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Table.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("New Tournament");
             stage.setScene(new Scene(root1, 737, 533));
+            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

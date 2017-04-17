@@ -32,6 +32,7 @@ public class UsePageController {
                         //stage.initStyle(StageStyle.UNDECORATED);
                         stage.setTitle("Welcome!");
                         stage.setScene(new Scene(root1, 394, 251));
+                        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
                         stage.show();
                 } catch (IOException e) {
                         e.printStackTrace();

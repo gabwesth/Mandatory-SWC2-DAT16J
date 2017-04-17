@@ -46,6 +46,7 @@ public class FirstPageController {
             Stage stage = new Stage();
             stage.setTitle("Use Existing Tournament");
             stage.setScene(new Scene(root1, 394, 251));
+            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
