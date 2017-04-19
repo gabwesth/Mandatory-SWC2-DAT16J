@@ -10,8 +10,10 @@ import javafx.stage.Modality;
 import javafx.stage.*;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class FirstPageController {
+    Main scene = new Main();
 
     @FXML
     private Button UseExisting;
@@ -20,38 +22,14 @@ public class FirstPageController {
     private Button CreateNew;
 
     @FXML
-    void OpenCreatePage(ActionEvent event) {
-            try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreatePage.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            //stage.initModality(Modality.APPLICATION_MODAL);
-            //stage.initStyle(StageStyle.UNDECORATED);
-            stage.setTitle("Create New Tournament");
-            stage.setScene(new Scene(root1, 394, 251));
-            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-            stage.show();
-
-        } catch (IOException e) {
-                e.printStackTrace();
-            }
+    void OpenCreatePage(ActionEvent event) throws SQLException {
+        scene.openWindow(event,"CreatePage.fxml","Create New Tournament" );
 
     }
 
     @FXML
-    void OpenExistingPage(ActionEvent event) {
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UsePage.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Use Existing Tournament");
-            stage.setScene(new Scene(root1, 394, 251));
-            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+    void OpenExistingPage(ActionEvent event) throws SQLException {
+        scene.openWindow(event,"UsePage.fxml","Use Existing Tournament" );
     }
 
 }
