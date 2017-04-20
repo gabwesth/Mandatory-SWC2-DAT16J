@@ -4,42 +4,42 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="5.0" layoutY="20.0" text="Round 1" />
       <Label layoutX="90.0" layoutY="20.0" text="Round 2" />
       <Label layoutX="185.0" layoutY="20.0" text="Round 3" />
-      <Label layoutX="280.0" layoutY="20.0" text="Round 4" />
-      <Label layoutX="375.0" layoutY="20.0" text="Round 5" />
-      <Label layoutX="465.0" layoutY="20.0" text="Round 6" />
-      <Label layoutX="548.0" layoutY="20.0" text="Round 7" />
-      <Label layoutX="5.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v5" textAlignment="CENTER" />
-      <Label layoutX="5.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="2v6" />
-      <Label layoutX="5.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="3v7" />
-      <Label layoutX="5.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="4v8" />
-      <Label layoutX="90.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v2" />
-      <Label layoutX="90.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v5" />
-      <Label layoutX="90.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="4v6" />
-      <Label layoutX="90.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="8v7" />
-      <Label layoutX="185.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v3" />
-      <Label layoutX="185.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="2v4" />
-      <Label layoutX="185.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="5v8" />
-      <Label layoutX="185.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="7v6" />
-      <Label layoutX="277.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v4" />
-      <Label layoutX="277.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v8" />
-      <Label layoutX="277.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="2v7" />
-      <Label layoutX="280.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="6v5" />
-      <Label layoutX="370.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v8" />
-      <Label layoutX="375.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="4v7" />
-      <Label layoutX="375.0" layoutY="205.0" prefHeight="20.0" prefWidth="52.0" text="6v3" />
-      <Label layoutX="375.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="5v2" />
-      <Label layoutX="465.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v7" />
-      <Label layoutX="465.0" layoutY="125.0" prefHeight="20.0" prefWidth="52.0" text="6v8" />
-      <Label layoutX="465.0" layoutY="205.0" prefHeight="20.0" prefWidth="52.0" text="5v4" />
-      <Label layoutX="465.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="2v3" />
-      <Label layoutX="548.0" layoutY="50.0" prefHeight="20.0" prefWidth="52.0" text="1v6" />
-      <Label layoutX="548.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="5v7" />
-      <Label layoutX="548.0" layoutY="205.0" prefHeight="20.0" prefWidth="52.0" text="2v8" />
-      <Label layoutX="548.0" layoutY="280.0" prefHeight="20.0" prefWidth="52.0" text="3v4" />
+      <Label layoutX="270.0" layoutY="20.0" text="Round 4" />
+      <Label layoutX="355.0" layoutY="20.0" text="Round 5" />
+      <Label layoutX="5.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v2" textAlignment="CENTER" />
+      <Label layoutX="5.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v8" />
+      <Label layoutX="5.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="4v7" />
+      <Label layoutX="90.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v7" />
+      <Label layoutX="90.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v4" />
+      <Label layoutX="90.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="2v5" />
+      <Label layoutX="185.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v4" />
+      <Label layoutX="185.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v5" />
+      <Label layoutX="185.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="2v6" />
+      <Label layoutX="270.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v6" />
+      <Label layoutX="270.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v2" />
+      <Label layoutX="270.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="4v8" />
+      <Label layoutX="355.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v3" />
+      <Label layoutX="355.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="5v8" />
+      <Label layoutX="355.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="4v2" />
+      <Label layoutX="440.0" layoutY="20.0" text="Round 6" />
+      <Label layoutX="525.0" layoutY="20.0" text="Round 7" />
+      <Label layoutX="5.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="5v6" />
+      <Label layoutX="90.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="8v6" />
+      <Label layoutX="185.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="7v8" />
+      <Label layoutX="270.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="7v5" />
+      <Label layoutX="355.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="7v6" />
+      <Label layoutX="440.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="4v5" />
+      <Label layoutX="440.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="2v7" />
+      <Label layoutX="440.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v6" />
+      <Label layoutX="440.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v8" />
+      <Label layoutX="525.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v5" />
+      <Label layoutX="525.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="3v7" />
+      <Label layoutX="525.0" layoutY="200.0" prefHeight="20.0" prefWidth="52.0" text="4v6" />
+      <Label layoutX="525.0" layoutY="270.0" prefHeight="20.0" prefWidth="52.0" text="2v8" />
    </children>
 </Pane>

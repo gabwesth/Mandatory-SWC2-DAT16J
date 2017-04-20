@@ -6,14 +6,13 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FootBallTableTournament.TableController">
    <children>
-      <TableView layoutX="348.0" layoutY="-1.0" prefHeight="493.0" prefWidth="389.0">
+      <TableView fx:id="Table" layoutX="348.0" layoutY="-1.0" prefHeight="493.0" prefWidth="389.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Name" />
-          <TableColumn prefWidth="89.0" text="Date of Birth" />
-            <TableColumn prefWidth="84.0" text="Email" />
-            <TableColumn prefWidth="52.0" text="Rank" />
-            <TableColumn prefWidth="65.0" text="Team" />
-            <TableColumn prefWidth="98.0" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="DOB" prefWidth="89.0" text="Date of Birth" />
+            <TableColumn fx:id="Email" prefWidth="84.0" text="Email" />
+            <TableColumn fx:id="Rank" prefWidth="52.0" text="Rank" />
+            <TableColumn fx:id="Team" prefWidth="88.0" text="Team" />
         </columns>
       </TableView>
       <Button fx:id="FinalSave" layoutX="491.0" layoutY="500.0" mnemonicParsing="false" onAction="#CommitToDB" text="Save" />
