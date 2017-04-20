@@ -25,7 +25,7 @@ public class CreatePageController {
     ObservableList<Integer> optionList = FXCollections.observableArrayList(4,6,8,10);
 
     @FXML
-    private ChoiceBox TeamNumbers;
+    public ChoiceBox TeamNumbers;
     @FXML
     private TextField NewTournamentName;
     @FXML

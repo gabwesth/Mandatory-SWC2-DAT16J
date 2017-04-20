@@ -4,8 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" fx:controller="FootBallTableTournament.TableController" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FootBallTableTournament.TableController">
    <children>
       <TableView layoutX="348.0" layoutY="-1.0" prefHeight="493.0" prefWidth="389.0">
         <columns>
@@ -40,6 +39,6 @@
       </TableView>
       <Button layoutX="126.0" layoutY="500.0" mnemonicParsing="false" onAction="#UpdateTableContentMatch" text="Update" />
       <Button layoutX="188.0" layoutY="500.0" mnemonicParsing="false" onAction="#DeleteTableContentMatch" text="Delete" />
-      <Button layoutX="301.0" layoutY="500.0" mnemonicParsing="false" text="Show Schedule" />
+      <Button layoutX="301.0" layoutY="500.0" mnemonicParsing="false" onAction="#ShowSchedule" text="Show Schedule" />
    </children>
 </Pane>
