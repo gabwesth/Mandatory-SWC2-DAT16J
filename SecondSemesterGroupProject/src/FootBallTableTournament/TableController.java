@@ -11,11 +11,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TableController {
-
+    Main scene = new Main();
     @FXML
     void UpdateTableContentPlayer(ActionEvent event) {
 
     }
+    @FXML
+    void ShowSchedule(ActionEvent event) {
+    }
+
 
     @FXML
     void DeleteTableContentPlayer(ActionEvent event) {
