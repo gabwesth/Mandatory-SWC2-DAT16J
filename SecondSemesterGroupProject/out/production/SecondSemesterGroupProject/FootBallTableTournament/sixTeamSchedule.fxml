@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FootBallTableTournament.sixTeamController">
    <children>
       <Label layoutX="5.0" layoutY="20.0" text="Round 1" />
       <Label layoutX="90.0" layoutY="20.0" text="Round 2" />
@@ -26,5 +26,6 @@
       <Label layoutX="370.0" layoutY="55.0" prefHeight="20.0" prefWidth="52.0" text="1v3" />
       <Label layoutX="375.0" layoutY="130.0" prefHeight="20.0" prefWidth="52.0" text="5v6" />
       <Label layoutX="375.0" layoutY="205.0" prefHeight="20.0" prefWidth="52.0" text="4v2" />
+      <Button layoutX="439.0" layoutY="125.0" mnemonicParsing="false" text="Save" />
    </children>
 </Pane>

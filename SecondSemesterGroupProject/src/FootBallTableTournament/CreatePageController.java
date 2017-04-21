@@ -23,7 +23,11 @@ public class CreatePageController {
     Main scene = new Main();
 
     ObservableList<Integer> optionList = FXCollections.observableArrayList(4,6,8,10);
-
+    // conditions based on number of teams for later use in opening specific schedules from table.fxml
+    boolean condition4 = false;
+    boolean condition6 = false;
+    boolean condition8 = false;
+    boolean condition10 = false;
     @FXML
     public ChoiceBox TeamNumbers;
     @FXML
@@ -44,6 +48,32 @@ public class CreatePageController {
         String TName = NewTournamentName.getText();
         int TNumbers = (int) TeamNumbers.getValue();
         System.out.println(TName +" _ "  + TNumbers);
+        if (TNumbers.equals("4"))
+        {
+            condition4 = true;
+            condition6 = false;
+            condition8 = false;
+            condition10 = false;
+        }
+        if (TNumbers == 6) {
+            condition4 = false;
+            condition6 = true;
+            condition8 = false;
+            condition10 = false;
+        }
+        if (TNumbers == 8){
+            condition4 = false;
+            condition6 = false;
+            condition8 = true;
+            condition10 = false;
+        }
+        if (TNumbers == 10){
+            condition4 = false;
+            condition6 = false;
+            condition8 = false;
+            condition10 = true;
+        }
+
 
         try{
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
