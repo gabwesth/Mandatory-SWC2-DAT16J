@@ -27,6 +27,7 @@ public class FirstPageController {
 
     }
 
+
     @FXML
     void OpenExistingPage(ActionEvent event) throws SQLException {
         scene.openWindow(event,"UsePage.fxml","Use Existing Tournament" );

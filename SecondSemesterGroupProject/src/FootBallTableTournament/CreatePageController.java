@@ -47,12 +47,20 @@ public class CreatePageController {
 
         try{
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
+
             String sql = "INSERT INTO `Tournaments` VALUES ('"+TName+"' , NULL, '"+TNumbers+"', NULL)";
+            String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"players` (\n" +
+                    "  `Name` varchar(30) NOT NULL,\n" +
+                    "  `DateOfBirth` int(6) NOT NULL,\n" +
+                    "  `Email` varchar(30) NOT NULL,\n" +
+                    "  `Rank` int(11) NOT NULL\n" +
+                    ")";
             System.out.println(sql);
             //Create a connection and execute the Statement
             Connection con = DBconnection.getConnection();
             Statement stmt = con.createStatement();
             stmt.executeUpdate(sql);
+            stmt.executeUpdate(mySql);
             con.close();
             //Load the next page
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Table.fxml"));
