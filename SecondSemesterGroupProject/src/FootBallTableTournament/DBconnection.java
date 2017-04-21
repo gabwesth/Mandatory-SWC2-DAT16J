@@ -8,10 +8,11 @@ import java.sql.SQLException;
  * Created by gabriele on 18/04/2017.
  */
 public class DBconnection {
-    private final static String url = "jdbc:mysql://localhost:3306/";
+
+    private final static String url = "jdbc:mysql://35.157.209.176:3306/";
     private final static String DB_NAME = "footballtable";
     private final static String USER = "root";
-    private final static String PASS = "";
+    private final static String PASS = "root";
 
 
 
