@@ -48,26 +48,26 @@ public class CreatePageController {
         String TName = NewTournamentName.getText();
         int TNumbers = (int) TeamNumbers.getValue();
         System.out.println(TName +" _ "  + TNumbers);
-        if (TNumbers.equals("4"))
+        if (TeamNumbers.equals(4))
         {
             condition4 = true;
             condition6 = false;
             condition8 = false;
             condition10 = false;
         }
-        if (TNumbers == 6) {
+        if (TeamNumbers.equals(6)) {
             condition4 = false;
             condition6 = true;
             condition8 = false;
             condition10 = false;
         }
-        if (TNumbers == 8){
+        if (TeamNumbers.equals(8)){
             condition4 = false;
             condition6 = false;
             condition8 = true;
             condition10 = false;
         }
-        if (TNumbers == 10){
+        if (TeamNumbers.equals(10)){
             condition4 = false;
             condition6 = false;
             condition8 = false;
