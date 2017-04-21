@@ -49,11 +49,11 @@ public class UsePageController {
 
             Connection con = DBconnection.getConnection();
             Statement st = con.createStatement();
-            String sql = ("SELECT Name FROM `tournaments`");
+            String sql = ("SELECT Name FROM `Tournaments`");
             ResultSet rs = st.executeQuery(sql);
 
             while(rs.next()) {
-                optionList.add(rs.getString("Name"));
+             optionList.add(rs.getString("Name"));
 
             }
 
