@@ -22,6 +22,7 @@ import java.util.List;
 public class CreatePageController {
     Main scene = new Main();
     public static int choice;
+    public static String nameOfTournament;
 
     ObservableList<Integer> optionList = FXCollections.observableArrayList(4,6,8,10);
 
@@ -43,20 +44,20 @@ public class CreatePageController {
     @FXML
     private void LoadTable(ActionEvent event){
         String TName = NewTournamentName.getText();
+        nameOfTournament = TName;
         int TNumbers = (int) TeamNumbers.getValue();
         System.out.println(TName +" _ "  + TNumbers);
         choice = (int) TeamNumbers.getSelectionModel().getSelectedItem();
 
         try{
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
-
             String sql = "INSERT INTO `Tournaments` VALUES ('"+TName+"' , NULL, '"+TNumbers+"', NULL)";
 
             String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"_players` (\n" +
                     "  `Name` varchar(30) NOT NULL,\n" +
                     "  `DateOfBirth` int(6) NOT NULL,\n" +
                     "  `Email` varchar(30) NOT NULL,\n" +
-                    "  `Rank` int(11) NOT NULL\n" +
+                    "  `Rank` int(11) \n" +
                     ")";
             System.out.println(sql);
             //Create a connection and execute the Statement
