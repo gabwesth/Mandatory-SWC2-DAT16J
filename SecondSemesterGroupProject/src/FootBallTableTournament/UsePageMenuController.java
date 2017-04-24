@@ -8,9 +8,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class UsePageMenuController {
+    Main scene = new Main();
     String tour = UsePageController.tour;
+
     @FXML
     private Button ScheduleBtt;
     @FXML
@@ -22,16 +28,41 @@ public class UsePageMenuController {
 
     public void getMenu(ActionEvent event){
             //Load the next page
-        try {
-            System.out.println(tour);
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Table.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("New Tournament");
-            stage.setScene(new Scene(root1, 737, 533));
-            ((Stage) (((Button) event.getSource()).getScene().getWindow())).close();
-            stage.show();
-        }catch (IOException e) {
-        }
+        //scene.openWindowAndClose(event,"Table.fxml","New Tournament", 737, 533 );
+    }
+    public void loadScheadule(ActionEvent event){
+                int selection = 0;
+                try{
+                    //SELECT NumberOfTeams FROM `tournaments` WHERE Name='f'
+                    String sql = "SELECT `NumberOfTeams` FROM `Tournaments` WHERE  Name = '"+UsePageController.chosenTournament+"'";
+                    System.out.println(sql);
+                    //Create a connection and execute the Statement
+                    Connection con = DBconnection.getConnection();
+                    Statement stmt = con.createStatement();
+                    ResultSet rs = stmt.executeQuery(sql);
+                    if (rs.next()){
+                        selection = rs.getInt("NumberOfTeams");
+                    }
+                    System.out.println(selection);
+                    rs.close();
+                    con.close();
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+                if(selection== 4) {
+                    scene.openWindow(event,"fourTeamSchedule.fxml","4-Team Tournament!",600,217 );
+                }
+                if(selection == 6) {
+                    scene.openWindow(event,"sixTeamSchedule.fxml","6-Team Tournament!",525,280 );
+                }
+                if(selection == 8) {
+                    scene.openWindow(event,"eightTeamSchedule.fxml","8-Team Tournament",700,340 );
+                }
+                if(selection == 10) {
+                    scene.openWindow(event,"tenTeamSchedule.fxml","10-Team Tournament",900,400 );
+                }
     }
 }
+

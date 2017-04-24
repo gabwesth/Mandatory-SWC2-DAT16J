@@ -100,11 +100,8 @@ public class TableController {
             DOBp2.setText("No more Players");}
         }
 
-
         @FXML
         void CommitToDB(ActionEvent event) {
-
-
 
         }
 
