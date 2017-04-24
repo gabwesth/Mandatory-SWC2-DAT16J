@@ -21,13 +21,13 @@ public class Main extends Application {
         primaryStage.show();
     }
     @FXML
-    void openWindow(ActionEvent event, String FXMLpage, String Title) {
+    void openWindow(ActionEvent event, String FXMLpage, String Title,int width,int height) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXMLpage));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle(Title);
-            stage.setScene(new Scene(root1, 394, 251));
+            stage.setScene(new Scene(root1,width,height));
             ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
             stage.show();
         } catch (IOException e) {

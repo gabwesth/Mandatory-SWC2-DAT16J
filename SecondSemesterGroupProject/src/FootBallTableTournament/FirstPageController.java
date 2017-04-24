@@ -23,14 +23,13 @@ public class FirstPageController {
 
     @FXML
     void OpenCreatePage(ActionEvent event) throws SQLException {
-        scene.openWindow(event,"CreatePage.fxml","Create New Tournament" );
+        scene.openWindow(event,"CreatePage.fxml","Create New Tournament",395,251);
 
     }
 
-
     @FXML
     void OpenExistingPage(ActionEvent event) throws SQLException {
-        scene.openWindow(event,"UsePage.fxml","Use Existing Tournament" );
+        scene.openWindow(event,"UsePage.fxml","Use Existing Tournament",395,251 );
     }
 
 }

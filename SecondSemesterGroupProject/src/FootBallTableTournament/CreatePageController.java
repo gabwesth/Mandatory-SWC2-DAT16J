@@ -24,24 +24,20 @@ public class CreatePageController {
     public static int choice;
 
     ObservableList<Integer> optionList = FXCollections.observableArrayList(4,6,8,10);
-    // conditions based on number of teams for later use in opening specific schedules from table.fxml
-    boolean condition4 = false;
-    boolean condition6 = false;
-    boolean condition8 = false;
-    boolean condition10 = false;
-    @FXML
-    public ChoiceBox TeamNumbers;
-    @FXML
-    private TextField NewTournamentName;
-    @FXML
-    private Button BackBtt;
-    @FXML
-    private Button NextBtt;
+
+        @FXML
+        public ChoiceBox TeamNumbers;
+        @FXML
+        private TextField NewTournamentName;
+        @FXML
+        private Button BackBtt;
+        @FXML
+        private Button NextBtt;
 
 
     @FXML
     private void LoadFirstPage(ActionEvent event) {
-        scene.openWindow(event,"FirstPage.fxml","Welcome!" );
+        scene.openWindow(event,"FirstPage.fxml","Welcome!",395,251 );
     }
 
     @FXML
@@ -50,32 +46,6 @@ public class CreatePageController {
         int TNumbers = (int) TeamNumbers.getValue();
         System.out.println(TName +" _ "  + TNumbers);
         choice = (int) TeamNumbers.getSelectionModel().getSelectedItem();
-        /*if (TeamNumbers.equals(4))
-        {
-            condition4 = true;
-            condition6 = false;
-            condition8 = false;
-            condition10 = false;
-        }
-        if (TeamNumbers.equals(6)) {
-            condition4 = false;
-            condition6 = true;
-            condition8 = false;
-            condition10 = false;
-        }
-        if (TeamNumbers.equals(8)){
-            condition4 = false;
-            condition6 = false;
-            condition8 = true;
-            condition10 = false;
-        }
-        if (TeamNumbers.equals(10)){
-            condition4 = false;
-            condition6 = false;
-            condition8 = false;
-            condition10 = true;
-        }*/
-
 
         try{
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
@@ -94,17 +64,10 @@ public class CreatePageController {
             stmt.executeUpdate(sql);
             stmt.executeUpdate(mySql);
             con.close();
-            //Load the next page
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Table.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("New Tournament");
-            stage.setScene(new Scene(root1, 737, 533));
-            ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-            stage.show();
 
-        } catch (IOException e) {
-           e.printStackTrace();
+            //Load the next page
+            scene.openWindow(event,"Table.fxml","New Tournament",737,533);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
