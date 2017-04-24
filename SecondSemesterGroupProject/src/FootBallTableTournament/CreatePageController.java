@@ -51,7 +51,8 @@ public class CreatePageController {
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
 
             String sql = "INSERT INTO `Tournaments` VALUES ('"+TName+"' , NULL, '"+TNumbers+"', NULL)";
-            String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"players` (\n" +
+
+            String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"_players` (\n" +
                     "  `Name` varchar(30) NOT NULL,\n" +
                     "  `DateOfBirth` int(6) NOT NULL,\n" +
                     "  `Email` varchar(30) NOT NULL,\n" +

@@ -88,16 +88,16 @@ public class TableController {
 
             //if 4team condition is satisfied, launch 4team schedule
             if(choice == 4) {
-                scene.openWindow(event,"fourTeamSchedule.fxml","4-Team Tournament!",570,200 );
+                scene.openWindow(event,"fourTeamSchedule.fxml","4-Team Tournament!",600,217 );
             }
             if(choice == 6) {
-                scene.openWindow(event,"sixTeamSchedule.fxml","6-Team Tournament!",550,225 );
+                scene.openWindow(event,"sixTeamSchedule.fxml","6-Team Tournament!",525,280 );
             }
             if(choice == 8) {
-                scene.openWindow(event,"eightTeamSchedule.fxml","8-Team Tournament",650,300 );
+                scene.openWindow(event,"eightTeamSchedule.fxml","8-Team Tournament",700,340 );
             }
             if(choice == 10) {
-                scene.openWindow(event,"tenTeamSchedule.fxml","10-Team Tournament",650,330 );
+                scene.openWindow(event,"tenTeamSchedule.fxml","10-Team Tournament",900,400 );
             }
         }
         }
