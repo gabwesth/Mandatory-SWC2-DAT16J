@@ -10,8 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class UsePageMenuController {
-    Main scene = new Main();
-
+    String tour = UsePageController.tour;
     @FXML
     private Button ScheduleBtt;
     @FXML
@@ -22,7 +21,17 @@ public class UsePageMenuController {
     private Button StandingBtt;
 
     public void getMenu(ActionEvent event){
-            scene.openWindow(event,"Table.fxml","New Tournament",737,533 );
-
+            //Load the next page
+        try {
+            System.out.println(tour);
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Table.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("New Tournament");
+            stage.setScene(new Scene(root1, 737, 533));
+            ((Stage) (((Button) event.getSource()).getScene().getWindow())).close();
+            stage.show();
+        }catch (IOException e) {
+        }
     }
 }
