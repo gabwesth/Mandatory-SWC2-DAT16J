@@ -21,6 +21,7 @@ import java.util.List;
 
 public class CreatePageController {
     Main scene = new Main();
+    public static int choice;
 
     ObservableList<Integer> optionList = FXCollections.observableArrayList(4,6,8,10);
     // conditions based on number of teams for later use in opening specific schedules from table.fxml
@@ -48,7 +49,8 @@ public class CreatePageController {
         String TName = NewTournamentName.getText();
         int TNumbers = (int) TeamNumbers.getValue();
         System.out.println(TName +" _ "  + TNumbers);
-        if (TeamNumbers.equals(4))
+        choice = (int) TeamNumbers.getSelectionModel().getSelectedItem();
+        /*if (TeamNumbers.equals(4))
         {
             condition4 = true;
             condition6 = false;
@@ -72,7 +74,7 @@ public class CreatePageController {
             condition6 = false;
             condition8 = false;
             condition10 = true;
-        }
+        }*/
 
 
         try{

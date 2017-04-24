@@ -19,8 +19,8 @@ import java.util.ResourceBundle;
 
 public class TableController {
 
-    CreatePageController cpc = new CreatePageController();
 
+    int choice = CreatePageController.choice;
     @FXML
     private TextField EmailP2;
     @FXML
@@ -87,7 +87,7 @@ public class TableController {
         void DispaySchedule(ActionEvent event) {
 
             //if 4team condition is satisfied, launch 4team schedule
-            if(cpc.condition4 = true) {
+            if(choice == 4) {
                 try{
                 FXMLLoader fxmlLoader4 = new FXMLLoader(getClass().getResource("fourTeamSchedule.fxml"));
                 Parent root2 = (Parent) fxmlLoader4.load();
@@ -100,7 +100,7 @@ public class TableController {
                     e.printStackTrace();
                 }
             }
-            if(cpc.condition6 = true) {
+            if(choice == 6) {
                 try{
                     FXMLLoader fxmlLoader6 = new FXMLLoader(getClass().getResource("sixTeamSchedule.fxml"));
                     Parent root3 = (Parent) fxmlLoader6.load();
@@ -113,7 +113,7 @@ public class TableController {
                     e.printStackTrace();
                 }
             }
-            if(cpc.condition8 = true) {
+            if(choice == 8) {
                 try{
                     FXMLLoader fxmlLoader8 = new FXMLLoader(getClass().getResource("eightTeamSchedule.fxml"));
                     Parent root3 = (Parent) fxmlLoader8.load();
@@ -126,7 +126,7 @@ public class TableController {
                     e.printStackTrace();
                 }
             }
-            if(cpc.condition10 = true) {
+            if(choice == 10) {
                 try{
                     FXMLLoader fxmlLoader10 = new FXMLLoader(getClass().getResource("tenTeamSchedule.fxml"));
                     Parent root4 = (Parent) fxmlLoader10.load();
