@@ -37,7 +37,7 @@ public class CreatePageController {
 
     @FXML
     private void LoadFirstPage(ActionEvent event) {
-        scene.openWindow(event,"FirstPage.fxml","Welcome!",395,251 );
+        scene.openWindowAndClose(event,"FirstPage.fxml","Welcome!",395,251 );
     }
 
     @FXML
@@ -66,7 +66,7 @@ public class CreatePageController {
             con.close();
 
             //Load the next page
-            scene.openWindow(event,"Table.fxml","New Tournament",737,533);
+            scene.openWindowAndClose(event,"Table.fxml","New Tournament",737,533);
 
         } catch (SQLException e) {
             e.printStackTrace();

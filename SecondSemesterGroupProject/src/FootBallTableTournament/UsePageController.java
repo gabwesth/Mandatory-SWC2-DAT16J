@@ -66,18 +66,9 @@ public class UsePageController {
          @FXML
          void ShowTournamentPage(ActionEvent event) throws SQLException
          {
-            try{
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UsePageMenu.fxml"));
-                Parent root1 = (Parent) fxmlLoader.load();
-                Stage stage = new Stage();
-                stage.setTitle("Existing Tournament");
-                stage.setScene(new Scene(root1, 737, 533));
-                ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-                stage.show();
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+             scene.openWindowAndClose(event,"UsePageMenu.fxml","Existing Tournament!",737, 533 );
+
          }
 
 }
