@@ -12,19 +12,37 @@ public class sixTeamController {
     Main scene = new Main();
     @FXML
     private Button Save6Button;
-  /* @FXML
+   @FXML
     private TextField r1;
     @FXML
     private TextField r12;
+    @FXML
+    private TextField r13;
     @FXML
     private TextField r2;
     @FXML
     private TextField r22;
     @FXML
+    private TextField r23;
+    @FXML
     private TextField r3;
     @FXML
     private TextField r32;
- * uncomment this once the GUI has textfields for results
- */
+    @FXML
+    private TextField r33;
+    @FXML
+    private TextField r4;
+    @FXML
+    private TextField r42;
+    @FXML
+    private TextField r43;
+    @FXML
+    private TextField r5;
+    @FXML
+    private TextField r52;
+    @FXML
+    private TextField r53;
+
+
 
 }
