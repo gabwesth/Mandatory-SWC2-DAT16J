@@ -51,19 +51,21 @@ public class CreatePageController {
 
         try{
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
-            String sql = "INSERT INTO `Tournaments` VALUES ('"+TName+"' , NULL, '"+TNumbers+"', NULL)";
+            String sql = "INSERT INTO `Tournaments` VALUES ('"+TName+"' , '"+TNumbers+"')";
             String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"_players` (\n" +
                     "  `Name` varchar(30) NOT NULL,\n" +
                     "  `DateOfBirth` int(6) NOT NULL,\n" +
                     "  `Email` varchar(30) NOT NULL,\n" +
                     "  `Rank` int(11) \n" +
                     ")";
-            String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"_Players` (\n" +
-                    "  `Name` varchar(30) NOT NULL,\n" +
-                    "  `DateOfBirth` int(6) NOT NULL,\n" +
-                    "  `Email` varchar(30) NOT NULL,\n" +
-                    "  `Rank` int(11) \n" +
+            String results = "CREATE TABLE IF NOT EXISTS `"+TName+"_results` (\n" +
+                    "`IDgame` int(45) NOT NULL, \n" +
+                    "`Team1` varchar(20) NOT NULL, \n" +
+                    "`Team2` varchar(20) NOT NULL, \n" +
+                    "`Score` varchar(20) NOT NULL,\n" +
+                    "`Date` varchar(15) NOT NULL \n" +
                     ")";
+
             System.out.println(sql);
             //Create a connection and execute the Statement
             Connection con = DBconnection.getConnection();
