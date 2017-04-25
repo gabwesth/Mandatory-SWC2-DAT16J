@@ -35,8 +35,8 @@ public class UsePageController {
         private Button BackBtt;
 
         @FXML
-        void LoadFirstPage(ActionEvent event) {
-            scene.openWindow(event,"FirstPage.fxml","Welcome!",395, 251 );
+        void goBack(ActionEvent event) {
+            scene.openWindowAndClose(event,"FirstPage.fxml","Welcome!",395, 251 );
         }
 
         @FXML
@@ -65,10 +65,10 @@ public class UsePageController {
          }
 
          @FXML
-         void ShowTournamentPage(ActionEvent event) throws SQLException
+         void ShowTournamentMenu(ActionEvent event) throws SQLException
          {
              chosenTournament = (String) TournamentsOption.getValue();
-             scene.openWindowAndClose(event,"UsePageMenu.fxml",chosenTournament,737, 533 );
+             scene.openWindowAndClose(event,"UsePageMenu.fxml",chosenTournament,394, 251 );
 
          }
 

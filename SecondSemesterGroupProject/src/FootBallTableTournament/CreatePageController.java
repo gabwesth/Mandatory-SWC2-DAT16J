@@ -37,7 +37,7 @@ public class CreatePageController {
 
 
     @FXML
-    private void LoadFirstPage(ActionEvent event) {
+    private void goBack(ActionEvent event) {
         scene.openWindowAndClose(event,"FirstPage.fxml","Welcome!",395,251 );
     }
 
@@ -53,7 +53,7 @@ public class CreatePageController {
             //INSERT INTO `Tournaments` (`Name`, `Scheadule`, `NumberOfTeams`, `Result`) VALUES ('EasterTournamentDat16J', NULL, '6', NULL)
             String sql = "INSERT INTO `Tournaments` VALUES ('"+TName+"' , NULL, '"+TNumbers+"', NULL)";
 
-            String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"_players` (\n" +
+            String mySql = "CREATE TABLE IF NOT EXISTS `"+TName+"_Players` (\n" +
                     "  `Name` varchar(30) NOT NULL,\n" +
                     "  `DateOfBirth` int(6) NOT NULL,\n" +
                     "  `Email` varchar(30) NOT NULL,\n" +

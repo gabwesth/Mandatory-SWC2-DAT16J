@@ -9,8 +9,8 @@
       <Pane prefHeight="251.0" prefWidth="394.0">
          <children>
             <Label layoutX="43.0" layoutY="71.0" prefHeight="17.0" prefWidth="133.0" text="Choose Tournament :" />
-            <Button fx:id="OKbutton" layoutX="249.0" layoutY="150.0" mnemonicParsing="false" onAction="#ShowTournamentPage" prefHeight="45.0" prefWidth="83.0" text="OK" />
-            <Button fx:id="BackBtt" layoutX="43.0" layoutY="150.0" mnemonicParsing="false" onAction="#LoadFirstPage" prefHeight="45.0" prefWidth="83.0" text="BACK" />
+            <Button fx:id="OKbutton" layoutX="249.0" layoutY="150.0" mnemonicParsing="false" onAction="#ShowTournamentMenu" prefHeight="45.0" prefWidth="83.0" text="OK" />
+            <Button fx:id="BackBtt" layoutX="43.0" layoutY="150.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="83.0" text="BACK" />
             <ChoiceBox fx:id="TournamentsOption" layoutX="182.0" layoutY="67.0" prefWidth="150.0" />
          </children>
       </Pane>
