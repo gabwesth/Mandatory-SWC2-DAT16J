@@ -15,7 +15,7 @@
             <ChoiceBox fx:id="TeamNumbers" layoutX="196.0" layoutY="134.0" prefHeight="25.0" prefWidth="38.0" />
             <Label layoutX="82.0" layoutY="138.0" text="Numbers of Teams :" />
             <Button fx:id="NextBtt" layoutX="302.0" layoutY="193.0" mnemonicParsing="false" onAction="#LoadTable" prefHeight="32.0" prefWidth="55.0" text="NEXT" />
-            <Button fx:id="BackBtt" layoutX="31.0" layoutY="193.0" mnemonicParsing="false" onAction="#LoadFirstPage" prefHeight="32.0" prefWidth="55.0" text="BACK" />
+            <Button fx:id="BackBtt" layoutX="31.0" layoutY="193.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="55.0" text="BACK" />
          </children>
       </Pane>
    </children>

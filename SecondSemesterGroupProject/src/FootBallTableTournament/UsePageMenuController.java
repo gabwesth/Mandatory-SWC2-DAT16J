@@ -26,6 +26,10 @@ public class UsePageMenuController {
     @FXML
     private Button StandingBtt;
 
+    public void goBack(ActionEvent event){
+        scene.openWindowAndClose(event,"UsePage.fxml","Select Tournament", 394, 251 );
+    }
+
     public void getMenu(ActionEvent event){
             //Load the previous page
         scene.openWindowAndClose(event,"UsePage.fxml","New Tournament", 737, 533 );

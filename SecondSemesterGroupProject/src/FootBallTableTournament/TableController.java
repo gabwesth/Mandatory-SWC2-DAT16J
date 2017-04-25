@@ -22,10 +22,10 @@ import java.util.ResourceBundle;
 public class TableController {
     Main scene = new Main();
 
-
     int choice = CreatePageController.choice;
     int limit=0;
     String nameOfTournament = CreatePageController.nameOfTournament;
+
     @FXML
     private TextField EmailP2;
     @FXML
