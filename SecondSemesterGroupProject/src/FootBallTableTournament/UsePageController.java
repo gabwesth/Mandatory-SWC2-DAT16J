@@ -36,7 +36,8 @@ public class UsePageController {
 
         @FXML
         void LoadFirstPage(ActionEvent event) {
-            scene.openWindow(event,"FirstPage.fxml","Welcome!",395, 251 );
+
+            scene.openWindowAndClose(event,"FirstPage.fxml","Welcome!",395, 251 );
         }
 
         @FXML
