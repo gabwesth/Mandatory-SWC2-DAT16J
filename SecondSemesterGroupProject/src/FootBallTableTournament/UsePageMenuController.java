@@ -31,8 +31,8 @@ public class UsePageMenuController {
     }
 
     public void getMenu(ActionEvent event){
-            //Load the next page
-        //scene.openWindowAndClose(event,"Table.fxml","New Tournament", 737, 533 );
+            //Load the previous page
+        scene.openWindowAndClose(event,"UsePage.fxml","New Tournament", 737, 533 );
     }
     public void loadScheadule(ActionEvent event){
                 int selection = 0;

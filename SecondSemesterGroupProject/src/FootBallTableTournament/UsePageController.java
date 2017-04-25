@@ -35,7 +35,12 @@ public class UsePageController {
         private Button BackBtt;
 
         @FXML
+<<<<<<< HEAD
+        void LoadFirstPage(ActionEvent event) {
+
+=======
         void goBack(ActionEvent event) {
+>>>>>>> d9892340a46aeac9d3b2cace2d47e4041696e23f
             scene.openWindowAndClose(event,"FirstPage.fxml","Welcome!",395, 251 );
         }
 
